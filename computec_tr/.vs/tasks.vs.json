@@ -1,0 +1,10 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "tarea-travel_app-main",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}

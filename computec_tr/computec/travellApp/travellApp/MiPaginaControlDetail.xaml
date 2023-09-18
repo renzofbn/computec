@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="computecApp.MiPaginaControlDetail"
+             Title="CompuTec"
+             >
+  <StackLayout Padding="10">
+    <Label Text="Bienvenido a mi app de Computec" TextColor="Black"/>
+
+        <StackLayout Grid.Row="1" VerticalOptions="CenterAndExpand" HorizontalOptions="FillAndExpand" Padding="20">
+            <!-- Agrega aquí el contenido principal de tu página -->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Cuadro de imagen 1 -->
+                <Frame x:Name="CuadroImagen1" Grid.Row="0" Grid.Column="0" CornerRadius="10" HasShadow="True" BackgroundColor="Transparent" Padding="0" IsClippedToBounds="True" InputTransparent="True">
+                    <Image Source="laptop.png" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MostrarInformacionTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Cuadro de imagen 2 -->
+                <Frame x:Name="CuadroImagen2" Grid.Row="0" Grid.Column="1" CornerRadius="10" HasShadow="True" BackgroundColor="Transparent" Padding="0" IsClippedToBounds="True" InputTransparent="True">
+                    <Image Source="img1.jpg" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MostrarInformacionTapped01" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Cuadro de imagen 3 -->
+                <Frame x:Name="CuadroImagen3" Grid.Row="0" Grid.Column="2" CornerRadius="10" HasShadow="True" BackgroundColor="Transparent" Padding="0" IsClippedToBounds="True" InputTransparent="True">
+                    <Image Source="img2.jpg" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MostrarInformacionTapped02" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Cuadro de imagen 4 (nueva) -->
+                <Frame x:Name="CuadroImagen4" Grid.Row="1" Grid.Column="0" CornerRadius="10" HasShadow="True" BackgroundColor="Transparent" Padding="0" IsClippedToBounds="True" InputTransparent="True">
+                    <Image Source="img3.jpg" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MostrarInformacionTapped03" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Cuadro de imagen 5 (nueva) -->
+                <Frame x:Name="CuadroImagen5" Grid.Row="1" Grid.Column="1" CornerRadius="10" HasShadow="True" BackgroundColor="Transparent" Padding="0" IsClippedToBounds="True" InputTransparent="True">
+                    <Image Source="img4.jpg" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MostrarInformacionTapped04" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+
+                <!-- Cuadro de imagen 6 (nueva) -->
+                <Frame x:Name="CuadroImagen6" Grid.Row="1" Grid.Column="2" CornerRadius="10" HasShadow="True" BackgroundColor="Transparent" Padding="0" IsClippedToBounds="True" InputTransparent="True">
+                    <Image Source="img5.jpg" Aspect="AspectFill">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="MostrarInformacionTapped05" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </Frame>
+            </Grid>
+        </StackLayout>
+
+
+    </StackLayout>
+</ContentPage>
